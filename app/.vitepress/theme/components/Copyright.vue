@@ -5,6 +5,9 @@
         Powered by
         <a class="vitepress" target="_blank" href="//vitepress.vuejs.org/">VitePress</a>
     </div>
+    <!--    谷歌统计脚本-->
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6PHKRN"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </template>
 <script lang="ts" setup>
 import { useData } from 'vitepress'
