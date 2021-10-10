@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { useData } from 'vitepress'
 const { theme } = useData()
-const { repo, issueTerm = 'pathname', themes = 'github-light' } = theme.value.comment
+const { repo, issueTerm = 'title', themes = 'github-light' } = theme.value.comment
 const utterancesRef = ref()
 onMounted(() => {
     if (repo) {
