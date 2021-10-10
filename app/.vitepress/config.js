@@ -3,12 +3,12 @@ const { getPosts } = require('./theme/serverUtils')
 async function config() {
     return {
         head: [
+            ['script', {  src: 'https://www.googletagmanager.com/gtag/js?id=G-FE8P9C6S9M', }],
             ['script', {}, `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P6PHKRN');       
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-FE8P9C6S9M');
         `]
         ],// 谷歌统计脚本,需要替换成自己的
         title: 'logyxiao',
