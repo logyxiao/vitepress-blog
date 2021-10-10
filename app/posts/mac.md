@@ -68,4 +68,3 @@ describe: 个人Mac电脑配置
 
 4. source ~/.zshrc
 
-<Comment/>

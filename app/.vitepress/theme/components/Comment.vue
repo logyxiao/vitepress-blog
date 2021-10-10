@@ -25,6 +25,6 @@ onMounted(() => {
 <style>
 /*global  style*/
 .utterances {
-    max-width: inherit !important;
+    max-width: 1020px;
 }
 </style>

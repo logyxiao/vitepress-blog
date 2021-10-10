@@ -9,7 +9,7 @@ async function config() {
             posts: await getPosts(),
             website: 'https://github.com/logyxiao/vitepress-blog', //copyright link
             comment: {
-                repo: 'airene/vitepress-blog-pure',
+                repo: 'logyxiao/vitepress-blog',
                 themes: 'github-light',
                 issueTerm: 'pathname'
             },

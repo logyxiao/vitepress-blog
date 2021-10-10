@@ -1,19 +1,8 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-# 确保脚本抛出遇到的错误
-set -e
-
-# 生成静态文件
 yarn build
 
-# 进入生成的文件夹
-cd app/.vitepress/dist
+aws s3 cp app/.vitepress/dist s3://new.harlanzw.com --profile=hzw --recursive --acl=public-read --include="*" --exclude "*.html" --cache-control max-age=31536000,public
+aws s3 cp app/.vitepress/dist s3://new.harlanzw.com --profile=hzw --recursive --acl=public-read --exclude="*" --include "*.html" --cache-control max-age=0,no-cache,no-store,must-revalidate
 
-git init
-git add -A
-git commit -m 'deploy'
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/logyxiao/logyxiao.github.io.git master
-
-cd -
+aws cloudfront create-invalidation --profile=hzw --distribution-id=EMBZGGZKSX2IY --paths '/*'
