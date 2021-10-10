@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<input id="input" type="text">
+
+<body>
+
+</body>
+<script>
+    function debounce(fn, delay) {
+        let timeout = null;
+        return function () {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                fn.apply(this, arguments);
+            }, delay);
+            console.log("timeout", timeout)
+        };
+    }
+
+    function throttle(fn, delay) {
+        let canRun = true;
+        return function () {
+            if (!canRun) return;
+            canRun = false;
+            setTimeout(() => {
+                fn.apply(this, arguments);
+                canRun = true;
+            }, delay);
+            console.log("canRun", canRun)
+        };
+    }
+
+    function logInput(value) {
+        console.log(value)
+    }
+
+    let debounceLog = debounce(logInput, 300)
+    let throttleLog = throttle(logInput, 1000)
+
+    let inputText = document.getElementById('input')
+    inputText.addEventListener('keyup', function (e) {
+        debounceLog(e.target.value)
+        throttleLog(e.target.value)
+    })
+</script>
+
+</html>

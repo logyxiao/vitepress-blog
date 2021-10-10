@@ -24,7 +24,7 @@ async function config() {
             },
             nav: [
                 { text: '首页', link: '/' },
-                { text: '文章', link: '/pages/archives' },
+                { text: '归档', link: '/pages/archives' },
                 { text: '标签', link: '/pages/tags' },
                 { text: '关于', link: '/pages/about' }
                 // { text: 'Airene', link: 'http://airene.net' }  -- External link test
