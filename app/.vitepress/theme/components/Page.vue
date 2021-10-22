@@ -1,4 +1,5 @@
 <template>
+  <div class="list-wrap">
     <div v-for="(article, index) in posts" :key="index" class="list">
       <a
           :href="withBase(article.regularPath)"
@@ -8,17 +9,20 @@
           <div class="title">
             {{ article.frontMatter.title || "" }}
           </div>
-          <time datetime="2020-10-25" class="time">
+          <time datetime="2020-10-25" class="date">
             {{ article.frontMatter.date || "" }}
           </time>
         </div>
 
-        <div class="line"></div>
-        <p class="describe">
-          {{ article.frontMatter.describe || "" }}
-        </p>
+        <!--        <div class="line"></div>-->
+        <!--        <p class="describe">-->
+        <!--          {{ article.frontMatter.describe || "" }}-->
+        <!--        </p>-->
       </a>
     </div>
+    <a class="read-more" href="/pages/archives"
+    >查看所有文章→</a>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -29,27 +33,41 @@ const props = defineProps({
 </script>
 
 <style scoped>
+.list-wrap{
+  margin: 20px auto;
+}
+.read-more{
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: right;
+  font-size: 14px;
+  color: #3767b3;
+  display: block;
+}
 .article {
   display: block;
-  border-bottom: 1px solid #e5e5e5;
+  //border-bottom: 1px solid #e5e5e5;
   color: #555;
-  padding: 1rem 0;
+  padding: 0;
+  width: 700px;
+  margin: 0 auto;
 }
 .article-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.time {
-  color: #aaa;
+.date {
+  color: #23407d;
   letter-spacing: 0.5px;
 }
 .title {
   flex: 1;
   color: #353535;
   display: block;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   margin: 0.5rem 0;
 }
 .line {
@@ -82,7 +100,7 @@ const props = defineProps({
     overflow: hidden;
     padding: 0 0.5em;
   }
-  .time {
+  .date {
     font-size: 14px;
   }
   .line {
