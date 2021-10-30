@@ -18,7 +18,7 @@ describe: CKEditor5可以与 Angular，React 和 Vue.js 集成,也可以和 Elec
 有关更多详细信息，请查看此[官方教程](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/installing-plugins.html)。也可以使用[官方在线定制](https://ckeditor.com/ckeditor-5/online-builder/)选择自己需要的功能组件。
 
 ```bash
-git clone -b stable https://github.com/ckeditor/ckeditor5-build-classic.git
+git.md clone -b stable https://github.com/ckeditor/ckeditor5-build-classic.git
 cd ckeditor5-build-classic
 # 下载依赖
 yarn

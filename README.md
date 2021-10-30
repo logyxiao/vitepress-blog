@@ -25,7 +25,7 @@ describe: 项目概述
 ## 安装
 
 ```bash
-git clone https://github.com/logyxiao/vitepress-blog
+git.md clone https://github.com/logyxiao/vitepress-blog
 cd vitepress-blog
 yarn
 # 在本地启动服务器

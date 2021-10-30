@@ -1,9 +1,9 @@
 ---
-date: 2020-11-17
+date: 2021-10-29
 title: 个人Mac配置
 tags:
   - Mac
-  - 有用
+  - 常用
 describe: 个人Mac电脑配置
 ---
 
@@ -13,14 +13,18 @@ describe: 个人Mac电脑配置
 2. Markdown 编辑器:[Typora](https://typora.io/)
 3. 云文件同步[坚果云](https://www.jianguoyun.com/)
 4. 代码编辑:[Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=534106)
-5. 抓包软件:[Charles](https://www.charlesproxy.com/)
-6. 按键显示:[keycastr](https://github.com/keycastr/keycastr/releases)
-7. 图片压缩:[imageoptim](https://imageoptim.com/howto.html)
-8. Git 版本管理:[SourceTree](http://www.sourcetreeapp.com/)
-9. FTP:[Filezila](https://filezilla-project.org/)
-10. 数据库:[Navicat](http://www.navicat.com.cn/)
-11. 制图工具(开源免费):[diagrams](https://www.diagrams.net/)
-12. 制图工具(收费):[gliffy](https://www.gliffy.com/)
+5. 抓包软件-1:[Charles](https://www.charlesproxy.com/)
+6. 抓包软件-2:[proxyman](https://proxyman.io)
+7. 按键显示:[keycastr](https://github.com/keycastr/keycastr/releases)
+8. 图片压缩:[imageoptim](https://imageoptim.com/howto.html)
+9. Git 版本管理:[SourceTree](http://www.sourcetreeapp.com/)
+10. FTP:[Filezila](https://filezilla-project.org/)
+11. 数据库:[Navicat](http://www.navicat.com.cn/)
+12. 制图工具(开源免费):[diagrams](https://www.diagrams.net/)
+13. 制图工具(收费):[gliffy](https://www.gliffy.com/)
+14. 时间记录软件: [toggl](https://toggl.com)
+15. 笔记软件: [joplin](https://joplinapp.org)
+16. 视频下载软件: [dowine4](https://software.charliemonroe.net/downie/)
 
 ## 终端配置
 
